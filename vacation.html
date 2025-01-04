@@ -1,0 +1,47 @@
+<!Doctype HTML>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<title>VACATION</title>
+	<link rel="stylesheet" href="vacation.css" type="text/css">
+</head>
+<body id="page">
+    <div id="hidden-content" style="display: none;">
+	<em class="PTAG pull-right"></em>
+	<a class="CPTAG CFTAG"><img src="tree.gif" class="left" width="200">
+	<a class="CPTAG CFTAG"><img src="Vacation.gif" class="middle" width="720">
+	<a class="CPTAG CFTAG"><img src="tree.gif" class="right" width="200">
+	<p><a class="CPTAG">VACATION</a>!!!!!</p>
+	<em class="PTAG bottomleft"></em>
+	<em class="PTAG bottomright"></em>
+    </div>
+
+    <!-- Przycisk do uruchomienia muzyki oraz pokazania zawartości -->
+	<button id="play-music-btn">Enter VACATION</button>
+
+	<!-- Audio element, który będzie odtwarzany po kliknięciu -->
+    <audio id="background-audio" loop>
+        <source src="Vacation.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+	<!-- Skrypt umożliwiający odtwarzanie muzyki i pokazanie reszty strony -->
+	<script>
+		document.getElementById('play-music-btn').addEventListener('click', function() {
+			var audio = document.getElementById('background-audio');
+			var content = document.getElementById('hidden-content');
+			
+			// Rozpoczyna odtwarzanie muzyki
+			audio.play();
+			
+			// Pokazuje ukrytą zawartość strony
+			content.style.display = 'block';
+			
+			// Ukrywa przycisk po kliknięciu
+			this.style.display = 'none';
+		});
+	</script>
+</body>
+</html>

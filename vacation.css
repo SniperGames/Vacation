@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+a.CPTAG, a.CFTAG,
+a.CPTAG:focus, a.CFTAG:focus,
+a.CPTAG:visited, a.CFTAG:visited,
+a.CPTAG:hover, a.CFTAG:hover {
+	color: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	text-decoration: inherit !important;
+}
+
+body {
+	background-color: #3FB9FF;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Ustawia wysokość na 100% wysokości ekranu */
+	margin: 0; /* Usuwa marginesy */
+    font-family: Arial, sans-serif;
+}
+
+img {
+	height: auto;
+}
+
+img.left {
+	max-width: 24%;
+}
+
+img.middle {
+	max-width: 50%;
+}
+
+img.right {
+	max-width: 24%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.bottomleft {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+}
+
+.bottomright {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #ff4500; /* Intensywny pomarańczowy */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e63e00;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #cc3700;
+    transform: scale(0.98);
+}
